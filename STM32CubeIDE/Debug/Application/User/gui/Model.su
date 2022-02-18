@@ -1,0 +1,7 @@
+Model.cpp:27:1:Model::Model()	8	static
+Model.cpp:35:6:void Model::GetCurrentScreen(int)	0	static
+Model.cpp:75:6:void Model::Time_min_add()	0	static
+Model.cpp:65:6:void Model::Time_sec_add()	8	static
+Model.cpp:43:6:void Model::tick()	16	static
+Model.cpp:79:6:void Model::Time_RS()	0	static
+Model.cpp:90:6:void Model::Time_SS()	0	static
