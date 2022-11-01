@@ -8,10 +8,13 @@
 #include <mvp/View.hpp>
 #include <gui/driverpage_screen/DriverPagePresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/Gauge.hpp>
+#include <touchgfx/widgets/canvas/Circle.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/containers/progress_indicators/LineProgress.hpp>
+#include <touchgfx/widgets/Gauge.hpp>
 
 class DriverPageViewBase : public touchgfx::View<DriverPagePresenter>
 {
@@ -44,13 +47,27 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Box box_DriverPageBackground;
-    touchgfx::Gauge gauge_1;
-    touchgfx::PainterRGB565 gauge_1Painter;
+    touchgfx::Circle circle_white;
+    touchgfx::PainterRGB565 circle_whitePainter;
+    touchgfx::Circle circle_border;
+    touchgfx::PainterRGB565 circle_borderPainter;
+    touchgfx::Line line_center;
+    touchgfx::PainterRGB565 line_centerPainter;
+    touchgfx::Line line_100;
+    touchgfx::PainterRGB565 line_100Painter;
     touchgfx::TextAreaWithOneWildcard textArea_Speed;
     touchgfx::TextAreaWithTwoWildcards textArea_Time;
     touchgfx::ButtonWithLabel EngieneerPageButtun;
     touchgfx::ButtonWithLabel button_Timer_Reset;
     touchgfx::ButtonWithLabel button_Timer_Start;
+    touchgfx::LineProgress lineProgress1;
+    touchgfx::PainterRGB565 lineProgress1Painter;
+    touchgfx::Gauge gauge_ap;
+    touchgfx::PainterRGB565 gauge_apPainter;
+    touchgfx::Gauge gauge_bp;
+    touchgfx::PainterRGB565 gauge_bpPainter;
+    touchgfx::Gauge gauge_1;
+    touchgfx::PainterRGB565 gauge_1Painter;
 
     /*
      * Wildcard Buffers

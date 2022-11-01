@@ -3,8 +3,8 @@
 /*********************************************************************************/
 #include <gui_generated/engineerpage_screen/EngineerPageViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 #include "BitmapDatabase.hpp"
+#include <texts/TextKeysAndLanguages.hpp>
 
 EngineerPageViewBase::EngineerPageViewBase() :
     buttonCallback(this, &EngineerPageViewBase::buttonCallbackHandler)
@@ -14,23 +14,7 @@ EngineerPageViewBase::EngineerPageViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
     box_EngineerPageBackground.setPosition(0, 0, 800, 480);
-    box_EngineerPageBackground.setColor(touchgfx::Color::getColorFromRGB(100, 100, 100));
-
-    textArea_Temp.setXY(106, 129);
-    textArea_Temp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
-    textArea_Temp.setLinespacing(0);
-    Unicode::snprintf(textArea_TempBuffer, TEXTAREA_TEMP_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID11).getText());
-    textArea_Temp.setWildcard(textArea_TempBuffer);
-    textArea_Temp.resizeToCurrentText();
-    textArea_Temp.setTypedText(touchgfx::TypedText(T_SINGLEUSEID9));
-
-    boxProgress_Temp.setXY(106, 184);
-    boxProgress_Temp.setProgressIndicatorPosition(2, 2, 180, 16);
-    boxProgress_Temp.setRange(0, 120);
-    boxProgress_Temp.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
-    boxProgress_Temp.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
-    boxProgress_Temp.setColor(touchgfx::Color::getColorFromRGB(0, 255, 191));
-    boxProgress_Temp.setValue(60);
+    box_EngineerPageBackground.setColor(touchgfx::Color::getColorFromRGB(136, 175, 252));
 
     DriverPageButtun.setXY(0, 0);
     DriverPageButtun.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
@@ -39,11 +23,117 @@ EngineerPageViewBase::EngineerPageViewBase() :
     DriverPageButtun.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     DriverPageButtun.setAction(buttonCallback);
 
+    boxProgress_Temp.setXY(20, 140);
+    boxProgress_Temp.setProgressIndicatorPosition(2, 2, 180, 16);
+    boxProgress_Temp.setRange(0, 120);
+    boxProgress_Temp.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
+    boxProgress_Temp.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
+    boxProgress_Temp.setColor(touchgfx::Color::getColorFromRGB(166, 0, 255));
+    boxProgress_Temp.setValue(87);
+
+    textArea_Temp.setXY(20, 100);
+    textArea_Temp.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_Temp.setLinespacing(0);
+    Unicode::snprintf(textArea_TempBuffer, TEXTAREA_TEMP_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID11).getText());
+    textArea_Temp.setWildcard(textArea_TempBuffer);
+    textArea_Temp.resizeToCurrentText();
+    textArea_Temp.setTypedText(touchgfx::TypedText(T_SINGLEUSEID9));
+
+    boxProgress_Temp_2.setXY(20, 440);
+    boxProgress_Temp_2.setProgressIndicatorPosition(2, 2, 180, 16);
+    boxProgress_Temp_2.setRange(0, 120);
+    boxProgress_Temp_2.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
+    boxProgress_Temp_2.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
+    boxProgress_Temp_2.setColor(touchgfx::Color::getColorFromRGB(166, 0, 255));
+    boxProgress_Temp_2.setValue(87);
+
+    textArea_Temp_2.setXY(590, 100);
+    textArea_Temp_2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_Temp_2.setLinespacing(0);
+    Unicode::snprintf(textArea_Temp_2Buffer, TEXTAREA_TEMP_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID17).getText());
+    textArea_Temp_2.setWildcard(textArea_Temp_2Buffer);
+    textArea_Temp_2.resizeToCurrentText();
+    textArea_Temp_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID16));
+
+    boxProgress_Temp_3.setXY(590, 140);
+    boxProgress_Temp_3.setProgressIndicatorPosition(2, 2, 180, 16);
+    boxProgress_Temp_3.setRange(0, 120);
+    boxProgress_Temp_3.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
+    boxProgress_Temp_3.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
+    boxProgress_Temp_3.setColor(touchgfx::Color::getColorFromRGB(166, 0, 255));
+    boxProgress_Temp_3.setValue(87);
+
+    textArea_Temp_3.setXY(20, 400);
+    textArea_Temp_3.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_Temp_3.setLinespacing(0);
+    Unicode::snprintf(textArea_Temp_3Buffer, TEXTAREA_TEMP_3_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID15).getText());
+    textArea_Temp_3.setWildcard(textArea_Temp_3Buffer);
+    textArea_Temp_3.resizeToCurrentText();
+    textArea_Temp_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID14));
+
+    boxProgress_Temp_4.setXY(590, 440);
+    boxProgress_Temp_4.setProgressIndicatorPosition(2, 2, 180, 16);
+    boxProgress_Temp_4.setRange(0, 120);
+    boxProgress_Temp_4.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
+    boxProgress_Temp_4.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
+    boxProgress_Temp_4.setColor(touchgfx::Color::getColorFromRGB(166, 0, 255));
+    boxProgress_Temp_4.setValue(87);
+
+    textArea_Temp_4.setXY(590, 400);
+    textArea_Temp_4.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_Temp_4.setLinespacing(0);
+    Unicode::snprintf(textArea_Temp_4Buffer, TEXTAREA_TEMP_4_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID13).getText());
+    textArea_Temp_4.setWildcard(textArea_Temp_4Buffer);
+    textArea_Temp_4.resizeToCurrentText();
+    textArea_Temp_4.setTypedText(touchgfx::TypedText(T_SINGLEUSEID12));
+
+    boxProgress_Temp_C.setXY(308, 140);
+    boxProgress_Temp_C.setProgressIndicatorPosition(2, 2, 180, 16);
+    boxProgress_Temp_C.setRange(0, 255);
+    boxProgress_Temp_C.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
+    boxProgress_Temp_C.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
+    boxProgress_Temp_C.setColor(touchgfx::Color::getColorFromRGB(166, 0, 255));
+    boxProgress_Temp_C.setValue(60);
+
+    textArea_Temp_C.setXY(308, 103);
+    textArea_Temp_C.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_Temp_C.setLinespacing(0);
+    Unicode::snprintf(textArea_Temp_CBuffer, TEXTAREA_TEMP_C_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID20).getText());
+    textArea_Temp_C.setWildcard(textArea_Temp_CBuffer);
+    textArea_Temp_C.resizeToCurrentText();
+    textArea_Temp_C.setTypedText(touchgfx::TypedText(T_SINGLEUSEID18));
+
+    boxProgress_Temp_M.setXY(308, 437);
+    boxProgress_Temp_M.setProgressIndicatorPosition(2, 2, 180, 16);
+    boxProgress_Temp_M.setRange(0, 255);
+    boxProgress_Temp_M.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
+    boxProgress_Temp_M.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_MEDIUM_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
+    boxProgress_Temp_M.setColor(touchgfx::Color::getColorFromRGB(166, 0, 255));
+    boxProgress_Temp_M.setValue(60);
+
+    textArea_Temp_M.setXY(308, 400);
+    textArea_Temp_M.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea_Temp_M.setLinespacing(0);
+    Unicode::snprintf(textArea_Temp_MBuffer, TEXTAREA_TEMP_M_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID21).getText());
+    textArea_Temp_M.setWildcard(textArea_Temp_MBuffer);
+    textArea_Temp_M.resizeToCurrentText();
+    textArea_Temp_M.setTypedText(touchgfx::TypedText(T_SINGLEUSEID19));
+
     add(__background);
     add(box_EngineerPageBackground);
-    add(textArea_Temp);
-    add(boxProgress_Temp);
     add(DriverPageButtun);
+    add(boxProgress_Temp);
+    add(textArea_Temp);
+    add(boxProgress_Temp_2);
+    add(textArea_Temp_2);
+    add(boxProgress_Temp_3);
+    add(textArea_Temp_3);
+    add(boxProgress_Temp_4);
+    add(textArea_Temp_4);
+    add(boxProgress_Temp_C);
+    add(textArea_Temp_C);
+    add(boxProgress_Temp_M);
+    add(textArea_Temp_M);
 }
 
 void EngineerPageViewBase::setupScreen()

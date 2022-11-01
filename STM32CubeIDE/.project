@@ -395,6 +395,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Font_verdana_30_4bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_30_4bpp_0.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Font_verdana_40_4bpp_0.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.cpp</locationURI>
@@ -420,6 +425,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_20_4bpp.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Kerning_verdana_30_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_30_4bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Kerning_verdana_40_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.cpp</locationURI>
@@ -438,6 +448,11 @@
 			<name>Application/User/generated/Table_verdana_20_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_verdana_30_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/fonts/src/Table_verdana_30_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Table_verdana_40_4bpp.cpp</name>
@@ -478,6 +493,36 @@
 			<name>Application/User/generated/image_needle_0.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_needle_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_needle_cal.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_needle_cal.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_needle_green.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_needle_green.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_needle_red.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_needle_red.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_p50x285.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_p50x285.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Blue_Buttons_Round_Edge_icon_button.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_icon_button.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Blue_Buttons_Round_Edge_icon_button_pressed.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Buttons_Round_Edge_icon_button_pressed.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Blue_Buttons_Round_Edge_small.cpp</name>

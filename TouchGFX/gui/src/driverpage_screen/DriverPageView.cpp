@@ -36,7 +36,15 @@ void DriverPageView::updateSpeed(unsigned char newSpeed)
     textArea_Speed.invalidate();
 }
 
-void DriverPageView::updateTemp(float newTemp){}
+void DriverPageView::updateBp(unsigned char newBp){
+    lineProgress1.setValue(newBp);
+    gauge_bp.setValue(newBp);
+}
+
+void DriverPageView::updateAp(unsigned char newAp){
+    gauge_ap.setValue(newAp);
+}
+
 
 void DriverPageView::updateTime(unsigned int min, unsigned int sec)
 {
@@ -46,11 +54,9 @@ void DriverPageView::updateTime(unsigned int min, unsigned int sec)
     textArea_Time.resizeToCurrentText();
     textArea_Time.invalidate();
 }
-
 void DriverPageView::Time_RS(){
     presenter->Time_RS();
 }
-
 void DriverPageView::Time_SS(){
     presenter->Time_SS();
 }

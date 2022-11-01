@@ -16,7 +16,8 @@ public:
 
 //
     void updateSpeed(uint8_t);
-    void updateTemp(float);
+    void updateBp(uint8_t);
+    void updateAp(uint8_t);
     void updateTime(unsigned int, unsigned int);
     void Time_RS();
     void Time_SS();

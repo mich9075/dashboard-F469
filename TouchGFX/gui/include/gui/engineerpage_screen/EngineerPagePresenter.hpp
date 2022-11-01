@@ -28,8 +28,15 @@ public:
     virtual ~EngineerPagePresenter() {};
 
 //
-    void setNewTemp(int value);
+    void setNewTemp1(int value);
+    void setNewTemp2(int value);
+    void setNewTemp3(int value);
+    void setNewTemp4(int value);
+    void setNewTempC(int value);
+    void setNewTempM(int value);
     void setNewSpeed(unsigned char value);
+    void setNewBp(unsigned char);
+    void setNewAp(unsigned char);
     void setNewTime(unsigned int, unsigned int);
     void butt_0();
 //

@@ -3,8 +3,8 @@
 /*********************************************************************************/
 #include <gui_generated/driverpage_screen/DriverPageViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include "BitmapDatabase.hpp"
 #include <texts/TextKeysAndLanguages.hpp>
+#include "BitmapDatabase.hpp"
 
 DriverPageViewBase::DriverPageViewBase() :
     buttonCallback(this, &DriverPageViewBase::buttonCallbackHandler)
@@ -16,35 +16,53 @@ DriverPageViewBase::DriverPageViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
 
     box_DriverPageBackground.setPosition(0, 0, 800, 480);
-    box_DriverPageBackground.setColor(touchgfx::Color::getColorFromRGB(100, 100, 100));
+    box_DriverPageBackground.setColor(touchgfx::Color::getColorFromRGB(208, 224, 255));
 
-    gauge_1.setBackground(touchgfx::Bitmap(BITMAP_BACKGROUND_ID));
-    gauge_1.setBackgroundOffset(0, 5);
-    gauge_1.setPosition(100, 180, 600, 300);
-    gauge_1.setCenter(300, 300);
-    gauge_1.setStartEndAngle(-90, 90);
-    gauge_1.setRange(0, 120);
-    gauge_1.setValue(57);
-    gauge_1.setEasingEquation(touchgfx::EasingEquations::linearEaseIn);
-    gauge_1.setNeedle(BITMAP_NEEDLE_0_ID, 3, 275);
-    gauge_1.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
-    gauge_1.setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
-    gauge_1.setArcVisible();
-    gauge_1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
-    gauge_1.getArc().setPainter(gauge_1Painter);
-    gauge_1.getArc().setRadius(250);
-    gauge_1.getArc().setLineWidth(50);
-    gauge_1.getArc().setCapPrecision(180);
+    circle_white.setPosition(60, 140, 680, 340);
+    circle_white.setCenter(340, 340);
+    circle_white.setRadius(270);
+    circle_white.setLineWidth(140);
+    circle_white.setArc(-90, 90);
+    circle_white.setCapPrecision(180);
+    circle_whitePainter.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    circle_white.setPainter(circle_whitePainter);
 
-    textArea_Speed.setXY(305, 358);
-    textArea_Speed.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    circle_border.setPosition(140, 217, 520, 263);
+    circle_border.setCenter(260, 263);
+    circle_border.setRadius(260);
+    circle_border.setLineWidth(3);
+    circle_border.setArc(-90, 90);
+    circle_border.setCapPrecision(180);
+    circle_borderPainter.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    circle_border.setPainter(circle_borderPainter);
+    circle_border.setAlpha(64);
+
+    line_center.setPosition(397, 220, 5, 74);
+    line_centerPainter.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    line_center.setPainter(line_centerPainter);
+    line_center.setStart(2, 0);
+    line_center.setEnd(2, 64);
+    line_center.setLineWidth(4);
+    line_center.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
+    line_center.setAlpha(64);
+
+    line_100.setPosition(623, 295, 100, 59);
+    line_100Painter.setColor(touchgfx::Color::getColorFromRGB(255, 162, 0));
+    line_100.setPainter(line_100Painter);
+    line_100.setStart(90, 4);
+    line_100.setEnd(5, 53);
+    line_100.setLineWidth(5);
+    line_100.setLineEndingStyle(touchgfx::Line::SQUARE_CAP_ENDING);
+
+    textArea_Speed.setXY(311, 367);
+    textArea_Speed.setColor(touchgfx::Color::getColorFromRGB(22, 31, 39));
     textArea_Speed.setLinespacing(0);
     Unicode::snprintf(textArea_SpeedBuffer, TEXTAREA_SPEED_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID8).getText());
     textArea_Speed.setWildcard(textArea_SpeedBuffer);
     textArea_Speed.resizeToCurrentText();
     textArea_Speed.setTypedText(touchgfx::TypedText(T_SINGLEUSEID1));
 
-    textArea_Time.setXY(215, 42);
+    textArea_Time.setXY(395, -13);
     textArea_Time.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea_Time.setLinespacing(0);
     touchgfx::Unicode::snprintf(textArea_TimeBuffer1, TEXTAREA_TIMEBUFFER1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID6).getText());
@@ -54,35 +72,103 @@ DriverPageViewBase::DriverPageViewBase() :
     textArea_Time.resizeToCurrentText();
     textArea_Time.setTypedText(touchgfx::TypedText(T_SINGLEUSEID5));
 
-    EngieneerPageButtun.setXY(0, 0);
+    EngieneerPageButtun.setXY(0, -60);
     EngieneerPageButtun.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
     EngieneerPageButtun.setLabelText(touchgfx::TypedText(T_SINGLEUSEID2));
     EngieneerPageButtun.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     EngieneerPageButtun.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     EngieneerPageButtun.setAction(buttonCallback);
 
-    button_Timer_Reset.setXY(630, 25);
-    button_Timer_Reset.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    button_Timer_Reset.setXY(800, 0);
+    button_Timer_Reset.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
     button_Timer_Reset.setLabelText(touchgfx::TypedText(T_SINGLEUSEID3));
     button_Timer_Reset.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     button_Timer_Reset.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     button_Timer_Reset.setAction(buttonCallback);
 
-    button_Timer_Start.setXY(630, 110);
-    button_Timer_Start.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    button_Timer_Start.setXY(800, 67);
+    button_Timer_Start.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
     button_Timer_Start.setLabelText(touchgfx::TypedText(T_SINGLEUSEID4));
     button_Timer_Start.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     button_Timer_Start.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
     button_Timer_Start.setAction(buttonCallback);
 
+    lineProgress1.setXY(-60, 195);
+    lineProgress1.setProgressIndicatorPosition(0, 0, 50, 285);
+    lineProgress1.setRange(0, 100);
+    lineProgress1.setBackground(touchgfx::Bitmap(BITMAP_P50X285_ID));
+    lineProgress1Painter.setColor(touchgfx::Color::getColorFromRGB(20, 151, 197));
+    lineProgress1.setPainter(lineProgress1Painter);
+    lineProgress1.setStart(25, 285);
+    lineProgress1.setEnd(25, 0);
+    lineProgress1.setLineWidth(50);
+    lineProgress1.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
+    lineProgress1.setValue(87);
+
+    gauge_ap.setPosition(140, 220, 260, 260);
+    gauge_ap.setCenter(260, 260);
+    gauge_ap.setStartEndAngle(-90, 0);
+    gauge_ap.setRange(0, 100);
+    gauge_ap.setValue(9);
+    gauge_ap.setNeedle(BITMAP_NEEDLE_GREEN_ID, 3, 260);
+    gauge_ap.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
+    gauge_ap.setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
+    gauge_ap.setArcVisible();
+    gauge_apPainter.setColor(touchgfx::Color::getColorFromRGB(35, 197, 132));
+    gauge_ap.getArc().setPainter(gauge_apPainter);
+    gauge_ap.getArc().setRadius(230);
+    gauge_ap.getArc().setLineWidth(60);
+    gauge_ap.getArc().setCapPrecision(180);
+    gauge_ap.setArcPosition(0, 0, 260, 260);
+
+    gauge_bp.setPosition(400, 220, 260, 260);
+    gauge_bp.setCenter(0, 259);
+    gauge_bp.setStartEndAngle(90, 0);
+    gauge_bp.setRange(0, 100);
+    gauge_bp.setValue(29);
+    gauge_bp.setNeedle(BITMAP_NEEDLE_RED_ID, 3, 260);
+    gauge_bp.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
+    gauge_bp.setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
+    gauge_bp.setArcVisible();
+    gauge_bpPainter.setColor(touchgfx::Color::getColorFromRGB(241, 96, 113));
+    gauge_bp.getArc().setPainter(gauge_bpPainter);
+    gauge_bp.getArc().setRadius(230);
+    gauge_bp.getArc().setLineWidth(60);
+    gauge_bp.getArc().setCapPrecision(180);
+    gauge_bp.setArcPosition(0, 0, 320, 320);
+
+    gauge_1.setPosition(20, 100, 760, 380);
+    gauge_1.setCenter(380, 380);
+    gauge_1.setStartEndAngle(-90, 90);
+    gauge_1.setRange(0, 120);
+    gauge_1.setValue(104);
+    gauge_1.setEasingEquation(touchgfx::EasingEquations::linearEaseIn);
+    gauge_1.setNeedle(BITMAP_NEEDLE_0_ID, 3, 380);
+    gauge_1.setMovingNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
+    gauge_1.setSteadyNeedleRenderingAlgorithm(touchgfx::TextureMapper::BILINEAR_INTERPOLATION);
+    gauge_1.setArcVisible();
+    gauge_1Painter.setColor(touchgfx::Color::getColorFromRGB(6, 97, 203));
+    gauge_1.getArc().setPainter(gauge_1Painter);
+    gauge_1.getArc().setRadius(300);
+    gauge_1.getArc().setLineWidth(80);
+    gauge_1.getArc().setCapPrecision(180);
+    gauge_1.setArcPosition(0, 0, 720, 380);
+
     add(__background);
     add(box_DriverPageBackground);
-    add(gauge_1);
+    add(circle_white);
+    add(circle_border);
+    add(line_center);
+    add(line_100);
     add(textArea_Speed);
     add(textArea_Time);
     add(EngieneerPageButtun);
     add(button_Timer_Reset);
     add(button_Timer_Start);
+    add(lineProgress1);
+    add(gauge_ap);
+    add(gauge_bp);
+    add(gauge_1);
 }
 
 void DriverPageViewBase::setupScreen()

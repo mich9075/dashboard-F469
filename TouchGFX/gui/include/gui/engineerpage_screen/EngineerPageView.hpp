@@ -3,9 +3,9 @@
 
 #include <gui_generated/engineerpage_screen/EngineerPageViewBase.hpp>
 #include <gui/engineerpage_screen/EngineerPagePresenter.hpp>
-
+//
 #include <touchgfx/Color.hpp>
-
+//
 class EngineerPageView : public EngineerPageViewBase
 {
 public:
@@ -14,7 +14,12 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 
-    void updateTemp(int);
+    void updateTemp1(int);
+    void updateTemp2(int);
+    void updateTemp3(int);
+    void updateTemp4(int);
+    void updateTempC(int);
+    void updateTempM(int);
 protected:
 };
 

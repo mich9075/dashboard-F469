@@ -1,21 +1,21 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under Ultimate Liberty license
-  * SLA0044, the "License"; You may not use this file except in compliance with
-  * the License. You may obtain a copy of the License at:
-  *                             www.st.com/SLA0044
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+ * All rights reserved.</center></h2>
+ *
+ * This software component is licensed by ST under Ultimate Liberty license
+ * SLA0044, the "License"; You may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at:
+ *                             www.st.com/SLA0044
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -67,22 +67,21 @@ SDRAM_HandleTypeDef hsdram1;
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+    .name = "defaultTask",
+    .stack_size = 128 * 4,
+    .priority = (osPriority_t)osPriorityNormal,
 };
 /* Definitions for TouchGFXTask */
 osThreadId_t TouchGFXTaskHandle;
 const osThreadAttr_t TouchGFXTask_attributes = {
-  .name = "TouchGFXTask",
-  .stack_size = 4096 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
+    .name = "TouchGFXTask",
+    .stack_size = 4096 * 4,
+    .priority = (osPriority_t)osPriorityNormal,
 };
 /* Definitions for myTimer01 */
 osTimerId_t myTimer01Handle;
 const osTimerAttr_t myTimer01_attributes = {
-  .name = "myTimer01"
-};
+    .name = "myTimer01"};
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -113,9 +112,9 @@ void Callback01(void *argument);
 /* USER CODE END 0 */
 
 /**
-  * @brief  The application entry point.
-  * @retval int
-  */
+ * @brief  The application entry point.
+ * @retval int
+ */
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -208,21 +207,21 @@ int main(void)
 }
 
 /**
-  * @brief System Clock Configuration
-  * @retval None
-  */
+ * @brief System Clock Configuration
+ * @retval None
+ */
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
   /** Configure the main internal regulator output voltage
-  */
+   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
   /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
+   * in the RCC_OscInitTypeDef structure.
+   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
@@ -237,15 +236,14 @@ void SystemClock_Config(void)
     Error_Handler();
   }
   /** Activate the Over-Drive mode
-  */
+   */
   if (HAL_PWREx_EnableOverDrive() != HAL_OK)
   {
     Error_Handler();
   }
   /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+   */
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
@@ -258,10 +256,10 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief CRC Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief CRC Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_CRC_Init(void)
 {
 
@@ -280,14 +278,13 @@ static void MX_CRC_Init(void)
   /* USER CODE BEGIN CRC_Init 2 */
 
   /* USER CODE END CRC_Init 2 */
-
 }
 
 /**
-  * @brief DMA2D Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief DMA2D Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_DMA2D_Init(void)
 {
 
@@ -317,14 +314,13 @@ static void MX_DMA2D_Init(void)
   /* USER CODE BEGIN DMA2D_Init 2 */
 
   /* USER CODE END DMA2D_Init 2 */
-
 }
 
 /**
-  * @brief DSIHOST Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief DSIHOST Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_DSIHOST_DSI_Init(void)
 {
 
@@ -435,14 +431,13 @@ static void MX_DSIHOST_DSI_Init(void)
   /* USER CODE BEGIN DSIHOST_Init 2 */
 
   /* USER CODE END DSIHOST_Init 2 */
-
 }
 
 /**
-  * @brief I2C1 Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief I2C1 Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_I2C1_Init(void)
 {
 
@@ -469,14 +464,13 @@ static void MX_I2C1_Init(void)
   /* USER CODE BEGIN I2C1_Init 2 */
   HAL_I2C_DeInit(&hi2c1);
   /* USER CODE END I2C1_Init 2 */
-
 }
 
 /**
-  * @brief LTDC Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief LTDC Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_LTDC_Init(void)
 {
 
@@ -552,14 +546,13 @@ static void MX_LTDC_Init(void)
   HAL_LTDC_SetPitch(&hltdc, 800, 0);
   __HAL_LTDC_ENABLE(&hltdc);
   /* USER CODE END LTDC_Init 2 */
-
 }
 
 /**
-  * @brief QUADSPI Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief QUADSPI Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_QUADSPI_Init(void)
 {
 
@@ -586,23 +579,22 @@ static void MX_QUADSPI_Init(void)
   }
   /* USER CODE BEGIN QUADSPI_Init 2 */
   BSP_QSPI_DeInit();
-  if(BSP_QSPI_Init() != QSPI_OK)
+  if (BSP_QSPI_Init() != QSPI_OK)
   {
     Error_Handler();
   }
-  if(BSP_QSPI_EnableMemoryMappedMode() != QSPI_OK)
+  if (BSP_QSPI_EnableMemoryMappedMode() != QSPI_OK)
   {
     Error_Handler();
   }
   /* USER CODE END QUADSPI_Init 2 */
-
 }
 
 /**
-  * @brief USART6 Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief USART6 Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_USART6_UART_Init(void)
 {
 
@@ -628,12 +620,11 @@ static void MX_USART6_UART_Init(void)
   /* USER CODE BEGIN USART6_Init 2 */
 
   /* USER CODE END USART6_Init 2 */
-
 }
 
 /**
-  * Enable DMA controller clock
-  */
+ * Enable DMA controller clock
+ */
 static void MX_DMA_Init(void)
 {
 
@@ -644,7 +635,6 @@ static void MX_DMA_Init(void)
   /* DMA2_Stream1_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA2_Stream1_IRQn, 5, 0);
   HAL_NVIC_EnableIRQ(DMA2_Stream1_IRQn);
-
 }
 
 /* FMC initialization function */
@@ -662,7 +652,7 @@ static void MX_FMC_Init(void)
   /* USER CODE END FMC_Init 1 */
 
   /** Perform the SDRAM1 memory initialization sequence
-  */
+   */
   hsdram1.Instance = FMC_SDRAM_DEVICE;
   /* hsdram1.Init */
   hsdram1.Init.SDBank = FMC_SDRAM_BANK1;
@@ -686,12 +676,12 @@ static void MX_FMC_Init(void)
 
   if (HAL_SDRAM_Init(&hsdram1, &SdramTiming) != HAL_OK)
   {
-    Error_Handler( );
+    Error_Handler();
   }
 
   /* USER CODE BEGIN FMC_Init 2 */
   BSP_SDRAM_DeInit();
-  if(BSP_SDRAM_Init() != SDRAM_OK)
+  if (BSP_SDRAM_Init() != SDRAM_OK)
   {
     Error_Handler();
   }
@@ -699,10 +689,10 @@ static void MX_FMC_Init(void)
 }
 
 /**
-  * @brief GPIO Initialization Function
-  * @param None
-  * @retval None
-  */
+ * @brief GPIO Initialization Function
+ * @param None
+ * @retval None
+ */
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -731,6 +721,12 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOH, GPIO_PIN_7, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : PG13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PK3 */
   GPIO_InitStruct.Pin = GPIO_PIN_3;
@@ -770,14 +766,23 @@ static void MX_GPIO_Init(void)
   HAL_NVIC_SetPriority(EXTI0_IRQn, 5, 0);
   HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 }
 
 /* USER CODE BEGIN 4 */
 
 extern xQueueHandle msg_speed;
-extern xQueueHandle msg_temp;
+extern xQueueHandle msg_temp1;
+extern xQueueHandle msg_temp2;
+extern xQueueHandle msg_temp3;
+extern xQueueHandle msg_temp4;
+extern xQueueHandle msg_temp_c;
+extern xQueueHandle msg_temp_m;
+extern xQueueHandle msg_bp;
 extern xQueueHandle msg_sec;
 extern xQueueHandle msg_butt;
+extern xQueueHandle msg_general; // experimental
 
 char butt_state = 0;
 
@@ -785,10 +790,10 @@ char butt_state = 0;
 
 /* USER CODE BEGIN Header_StartDefaultTask */
 /**
-  * @brief  Function implementing the defaultTask thread.
-  * @param  argument: Not used
-  * @retval None
-  */
+ * @brief  Function implementing the defaultTask thread.
+ * @param  argument: Not used
+ * @retval None
+ */
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
@@ -797,46 +802,96 @@ void StartDefaultTask(void *argument)
 
   osTimerStart(myTimer01Handle, 1000);
 
-  int speed = 87;
   uint16_t counter_delay = 0;
-  uint8_t Rx_buffer[3] = {'r', 'K', '\n'};
+  uint8_t Rx_buffer[3] = {'r', 94, '\n'};
 
-  int temp = 5;
-  int counter_dir = 1;  //demo
+  int temp = 64;
+  short Rx_temp = 0;
+  
 
-  for(;;)
+  int counter_dir = 1; // demo
+
+  for (;;)
   {
-   HAL_UART_Receive_DMA(&huart6, Rx_buffer, 3);
+    HAL_UART_Receive_DMA(&huart6, Rx_buffer, 3);
     // HAL_UART_Transmit(&huart6, Rx_buffer, 3, 10);
 
     switch (Rx_buffer[0])
     {
     case 's':
-      speed = Rx_buffer[1];
-    case 't':
-      temp = (int)Rx_buffer[1];
-    default:
-      counter_delay += 1;
-      Rx_buffer[0] = 'r';
+      xQueueSend(msg_speed, &Rx_buffer[1], 0);
       break;
-    }
 
-    xQueueSend(msg_speed, &speed, 0);
+    case 't':
+      xQueueSend(msg_temp1, &Rx_buffer[1], 0);
+      break;
 
+    case 'u':
+      xQueueSend(msg_temp2, &Rx_buffer[1], 0);
+      break;
+
+    case 'v':
+      xQueueSend(msg_temp3, &Rx_buffer[1], 0);
+      break;
+
+    case 'w':
+      xQueueSend(msg_temp4, &Rx_buffer[1], 0);
+      break;
+
+    case 'c':
+      xQueueSend(msg_temp_c, &Rx_buffer[1], 0);
+      break;
+
+    case 'm':
+      xQueueSend(msg_temp_m, &Rx_buffer[1], 0);
+      break;
+
+    case 'b':
+      xQueueSend(msg_bp, &Rx_buffer[1], 0);
+      break;
+
+    case 'r':
+      break;
+
+    default:
+      Rx_temp = (Rx_buffer[1] << 8) & Rx_buffer[0];
+      xQueueSend(msg_general, &Rx_temp, 0);
+      break;
+    } 
+  Rx_buffer[0] = 'r';
+  
+
+
+    // demo section
+    xQueueSend(msg_speed, &temp, 0);
+    xQueueSend(msg_temp1, &temp, 0);
+    xQueueSend(msg_temp2, &temp, 0);
+    xQueueSend(msg_temp3, &temp, 0);
+    xQueueSend(msg_temp4, &temp, 0);
+    xQueueSend(msg_temp_c, &temp, 0);
+    xQueueSend(msg_temp_m, &temp, 0);
+    xQueueSend(msg_bp, &temp, 0);
+
+
+    Rx_temp = ('a' << 8) | ((char)temp);
+    xQueueSend(msg_general, &Rx_temp, 0);
+    Rx_buffer[0] = 'r';
+    Rx_buffer[0] = 0;
+
+    //
     if (counter_delay > 100)
     {
-      xQueueSend(msg_temp, &temp, 0);
-
-      // demo section
       temp += (int)counter_dir;
       if (temp >= 120 || temp <= 0)
       {
         counter_dir *= -1;
       }
-      //		HAL_UART_Transmit(&huart6, &temp, 1, 10);
       counter_delay = 0;
-      //
     }
+    counter_delay++;
+    //
+
+
     osDelay(1);
   }
   /* USER CODE END 5 */
@@ -853,27 +908,29 @@ void Callback01(void *argument)
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
   /* Prevent unused argument(s) compilation warning */
-	if(GPIO_Pin == GPIO_PIN_0){
-		HAL_GPIO_TogglePin(GPIOK, GPIO_PIN_3);
+  if (GPIO_Pin == GPIO_PIN_0 || GPIO_Pin == GPIO_PIN_13)
+  {
+    HAL_GPIO_TogglePin(GPIOK, GPIO_PIN_3);
     xQueueSendFromISR(msg_butt, &butt_state, 0);
-	}
+  }
   /* USER CODE END Callback01 */
 }
 
 /**
-  * @brief  Period elapsed callback in non blocking mode
-  * @note   This function is called  when TIM6 interrupt took place, inside
-  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
-  * a global variable "uwTick" used as application time base.
-  * @param  htim : TIM handle
-  * @retval None
-  */
+ * @brief  Period elapsed callback in non blocking mode
+ * @note   This function is called  when TIM6 interrupt took place, inside
+ * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+ * a global variable "uwTick" used as application time base.
+ * @param  htim : TIM handle
+ * @retval None
+ */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   /* USER CODE BEGIN Callback 0 */
 
   /* USER CODE END Callback 0 */
-  if (htim->Instance == TIM6) {
+  if (htim->Instance == TIM6)
+  {
     HAL_IncTick();
   }
   /* USER CODE BEGIN Callback 1 */
@@ -882,9 +939,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 }
 
 /**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
+ * @brief  This function is executed in case of error occurrence.
+ * @retval None
+ */
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
@@ -893,14 +950,14 @@ void Error_Handler(void)
   /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
+ * @brief  Reports the name of the source file and the source line number
+ *         where the assert_param error has occurred.
+ * @param  file: pointer to the source file name
+ * @param  line: assert_param error line source number
+ * @retval None
+ */
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */

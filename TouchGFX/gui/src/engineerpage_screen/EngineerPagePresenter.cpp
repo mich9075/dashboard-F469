@@ -18,10 +18,27 @@ void EngineerPagePresenter::deactivate()
 }
 
 //
-void EngineerPagePresenter::setNewTemp(int NewTemp)
-{
-	view.updateTemp(NewTemp);
+void EngineerPagePresenter::setNewTemp1(int NewTemp){
+	view.updateTemp1(NewTemp);
 }
+void EngineerPagePresenter::setNewTemp2(int NewTemp){
+	view.updateTemp2(NewTemp);
+}
+void EngineerPagePresenter::setNewTemp3(int NewTemp){
+	view.updateTemp3(NewTemp);
+}
+void EngineerPagePresenter::setNewTemp4(int NewTemp){
+	view.updateTemp4(NewTemp);
+}
+void EngineerPagePresenter::setNewTempC(int NewTemp){
+	view.updateTempC(NewTemp);
+}
+void EngineerPagePresenter::setNewTempM(int NewTemp){
+	view.updateTempM(NewTemp);
+}
+
+void EngineerPagePresenter::setNewBp(unsigned char value){}
+void EngineerPagePresenter::setNewAp(unsigned char value){}
 
 void EngineerPagePresenter::butt_0()
 {

@@ -8,9 +8,9 @@
 #include <mvp/View.hpp>
 #include <gui/engineerpage_screen/EngineerPagePresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
-#include <touchgfx/containers/progress_indicators/BoxProgress.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/containers/progress_indicators/BoxProgress.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class EngineerPageViewBase : public touchgfx::View<EngineerPagePresenter>
 {
@@ -30,15 +30,35 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Box box_EngineerPageBackground;
-    touchgfx::TextAreaWithOneWildcard textArea_Temp;
-    touchgfx::BoxProgress boxProgress_Temp;
     touchgfx::ButtonWithLabel DriverPageButtun;
+    touchgfx::BoxProgress boxProgress_Temp;
+    touchgfx::TextAreaWithOneWildcard textArea_Temp;
+    touchgfx::BoxProgress boxProgress_Temp_2;
+    touchgfx::TextAreaWithOneWildcard textArea_Temp_2;
+    touchgfx::BoxProgress boxProgress_Temp_3;
+    touchgfx::TextAreaWithOneWildcard textArea_Temp_3;
+    touchgfx::BoxProgress boxProgress_Temp_4;
+    touchgfx::TextAreaWithOneWildcard textArea_Temp_4;
+    touchgfx::BoxProgress boxProgress_Temp_C;
+    touchgfx::TextAreaWithOneWildcard textArea_Temp_C;
+    touchgfx::BoxProgress boxProgress_Temp_M;
+    touchgfx::TextAreaWithOneWildcard textArea_Temp_M;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t TEXTAREA_TEMP_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textArea_TempBuffer[TEXTAREA_TEMP_SIZE];
+    static const uint16_t TEXTAREA_TEMP_2_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textArea_Temp_2Buffer[TEXTAREA_TEMP_2_SIZE];
+    static const uint16_t TEXTAREA_TEMP_3_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textArea_Temp_3Buffer[TEXTAREA_TEMP_3_SIZE];
+    static const uint16_t TEXTAREA_TEMP_4_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textArea_Temp_4Buffer[TEXTAREA_TEMP_4_SIZE];
+    static const uint16_t TEXTAREA_TEMP_C_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textArea_Temp_CBuffer[TEXTAREA_TEMP_C_SIZE];
+    static const uint16_t TEXTAREA_TEMP_M_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textArea_Temp_MBuffer[TEXTAREA_TEMP_M_SIZE];
 
 private:
 

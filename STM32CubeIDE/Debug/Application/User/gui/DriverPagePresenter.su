@@ -1,12 +1,17 @@
 DriverPagePresenter.hpp:28:13:DriverPagePresenter::~DriverPagePresenter()	0	static
 DriverPagePresenter.cpp:15:6:virtual void DriverPagePresenter::deactivate()	0	static
-DriverPagePresenter.cpp:46:6:virtual void DriverPagePresenter::butt_0()	0	static
+DriverPagePresenter.cpp:26:6:virtual void DriverPagePresenter::setNewTemp1(int)	0	static
+DriverPagePresenter.cpp:50:6:virtual void DriverPagePresenter::butt_0()	0	static
 DriverPagePresenter.hpp:28:13:virtual DriverPagePresenter::~DriverPagePresenter()	8	static
 DriverPagePresenter.cpp:10:6:virtual void DriverPagePresenter::activate()	0	static
 DriverPagePresenter.cpp:21:6:virtual void DriverPagePresenter::setNewSpeed(uint8_t)	0	static
-DriverPagePresenter.cpp:26:6:virtual void DriverPagePresenter::setNewTemp(int)	0	static
-DriverPagePresenter.cpp:31:6:virtual void DriverPagePresenter::setNewTime(unsigned int, unsigned int)	0	static
+DriverPagePresenter.cpp:31:6:virtual void DriverPagePresenter::setNewBp(unsigned char)	0	static
+DriverPagePresenter.cpp:35:6:virtual void DriverPagePresenter::setNewTime(unsigned int, unsigned int)	0	static
 DriverPagePresenter.hpp:28:13:virtual void* DriverPagePresenter::_ZThn4_N19DriverPagePresenterD1Ev()	0	static
+DriverPagePresenter.hpp:32:10:virtual void DriverPagePresenter::_ZThn4_N19DriverPagePresenter11setNewTemp1Ei(int)	0	static
+DriverPagePresenter.hpp:33:10:virtual void DriverPagePresenter::_ZThn4_N19DriverPagePresenter11setNewTemp2Ei(int)	0	static
+DriverPagePresenter.hpp:34:10:virtual void DriverPagePresenter::_ZThn4_N19DriverPagePresenter11setNewTemp3Ei(int)	0	static
+DriverPagePresenter.hpp:35:10:virtual void DriverPagePresenter::_ZThn4_N19DriverPagePresenter11setNewTemp4Ei(int)	0	static
 DriverPagePresenter.cpp:4:1:DriverPagePresenter::DriverPagePresenter(DriverPageView&)	8	static
-DriverPagePresenter.cpp:36:6:void DriverPagePresenter::Time_RS()	0	static
-DriverPagePresenter.cpp:41:6:void DriverPagePresenter::Time_SS()	0	static
+DriverPagePresenter.cpp:40:6:void DriverPagePresenter::Time_RS()	0	static
+DriverPagePresenter.cpp:45:6:void DriverPagePresenter::Time_SS()	0	static

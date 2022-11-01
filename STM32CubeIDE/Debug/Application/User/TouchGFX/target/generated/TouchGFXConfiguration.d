@@ -78,11 +78,15 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  ../../TouchGFX/gui/include/gui/engineerpage_screen/EngineerPageView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/engineerpage_screen/EngineerPageViewBase.hpp \
  ../../TouchGFX/gui/include/gui/engineerpage_screen/EngineerPagePresenter.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/BoxProgress.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  ../../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
@@ -287,6 +291,10 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
+
 ../../TouchGFX/gui/include/gui/engineerpage_screen/EngineerPageView.hpp:
 
 ../../TouchGFX/generated/gui_generated/include/gui_generated/engineerpage_screen/EngineerPageViewBase.hpp:
@@ -296,6 +304,10 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/BoxProgress.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 

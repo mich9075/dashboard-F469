@@ -69,7 +69,9 @@ Application/User/gui/DriverPagePresenter.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp
 
 ../../TouchGFX/gui/include/gui/driverpage_screen/DriverPageView.hpp:
 
@@ -210,3 +212,7 @@ Application/User/gui/DriverPagePresenter.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
