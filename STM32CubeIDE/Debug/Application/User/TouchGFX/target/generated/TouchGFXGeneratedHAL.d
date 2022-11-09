@@ -1,5 +1,5 @@
 Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
- C:/TouchGFXProjects/rerestart/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp \
+ C:/TouchGFXProjects/rerestart_push/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp \
  ../../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
@@ -50,11 +50,6 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../TouchGFX/gui/include/gui/model/ModelListener.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
@@ -70,6 +65,7 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
@@ -78,14 +74,16 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
  ../../TouchGFX/gui/include/gui/engineerpage_screen/EngineerPageView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/engineerpage_screen/EngineerPageViewBase.hpp \
  ../../TouchGFX/gui/include/gui/engineerpage_screen/EngineerPagePresenter.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/BoxProgress.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f469xx.h \
@@ -227,16 +225,6 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
 
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
-
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
@@ -267,6 +255,8 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
+
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
@@ -283,7 +273,15 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/LineProgress.hpp:
 
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Gauge.hpp:
+
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
 
 ../../TouchGFX/gui/include/gui/engineerpage_screen/EngineerPageView.hpp:
 
@@ -294,10 +292,6 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/BoxProgress.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Shape.hpp:
-
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractShape.hpp:
 
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
 

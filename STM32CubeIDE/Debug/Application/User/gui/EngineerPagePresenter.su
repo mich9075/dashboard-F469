@@ -1,16 +1,19 @@
 EngineerPagePresenter.hpp:28:13:EngineerPagePresenter::~EngineerPagePresenter()	0	static
 EngineerPagePresenter.cpp:15:6:virtual void EngineerPagePresenter::deactivate()	0	static
-EngineerPagePresenter.cpp:36:6:virtual void EngineerPagePresenter::butt_0()	0	static
-EngineerPagePresenter.cpp:41:6:virtual void EngineerPagePresenter::setNewSpeed(unsigned char)	0	static
-EngineerPagePresenter.cpp:42:6:virtual void EngineerPagePresenter::setNewTime(unsigned int, unsigned int)	0	static
+EngineerPagePresenter.cpp:43:6:virtual void EngineerPagePresenter::butt_0()	0	static
+EngineerPagePresenter.cpp:48:6:virtual void EngineerPagePresenter::setNewSpeed(unsigned char)	0	static
+EngineerPagePresenter.cpp:49:6:virtual void EngineerPagePresenter::setNewTime(unsigned int, unsigned int)	0	static
 EngineerPagePresenter.hpp:28:13:virtual EngineerPagePresenter::~EngineerPagePresenter()	8	static
 EngineerPagePresenter.cpp:10:6:virtual void EngineerPagePresenter::activate()	0	static
 EngineerPagePresenter.cpp:21:6:virtual void EngineerPagePresenter::setNewTemp1(int)	0	static
 EngineerPagePresenter.cpp:24:6:virtual void EngineerPagePresenter::setNewTemp2(int)	0	static
 EngineerPagePresenter.cpp:27:6:virtual void EngineerPagePresenter::setNewTemp3(int)	0	static
 EngineerPagePresenter.cpp:30:6:virtual void EngineerPagePresenter::setNewTemp4(int)	0	static
+EngineerPagePresenter.cpp:33:6:virtual void EngineerPagePresenter::setNewTempC(int)	0	static
+EngineerPagePresenter.cpp:36:6:virtual void EngineerPagePresenter::setNewTempM(int)	0	static
 EngineerPagePresenter.hpp:28:13:virtual void* EngineerPagePresenter::_ZThn4_N21EngineerPagePresenterD1Ev()	0	static
-EngineerPagePresenter.hpp:36:10:virtual void EngineerPagePresenter::_ZThn4_N21EngineerPagePresenter8setNewBpEh(unsigned char)	0	static
-EngineerPagePresenter.hpp:35:10:virtual void EngineerPagePresenter::_ZThn4_N21EngineerPagePresenter11setNewSpeedEh(unsigned char)	0	static
-EngineerPagePresenter.hpp:37:10:virtual void EngineerPagePresenter::_ZThn4_N21EngineerPagePresenter10setNewTimeEjj(unsigned int, unsigned int)	0	static
+EngineerPagePresenter.hpp:38:10:virtual void EngineerPagePresenter::_ZThn4_N21EngineerPagePresenter8setNewBpEh(unsigned char)	0	static
+EngineerPagePresenter.hpp:39:10:virtual void EngineerPagePresenter::_ZThn4_N21EngineerPagePresenter8setNewApEh(unsigned char)	0	static
+EngineerPagePresenter.hpp:37:10:virtual void EngineerPagePresenter::_ZThn4_N21EngineerPagePresenter11setNewSpeedEh(unsigned char)	0	static
+EngineerPagePresenter.hpp:40:10:virtual void EngineerPagePresenter::_ZThn4_N21EngineerPagePresenter10setNewTimeEjj(unsigned int, unsigned int)	0	static
 EngineerPagePresenter.cpp:4:1:EngineerPagePresenter::EngineerPagePresenter(EngineerPageView&)	8	static

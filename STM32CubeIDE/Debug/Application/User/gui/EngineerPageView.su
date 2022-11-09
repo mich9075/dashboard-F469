@@ -6,6 +6,8 @@ EngineerPageView.cpp:8:6:virtual void EngineerPageView::setupScreen()	0	static
 EngineerPageView.hpp:13:13:virtual EngineerPageView::~EngineerPageView()	8	static
 EngineerPageView.cpp:3:1:EngineerPageView::EngineerPageView()	8	static
 EngineerPageView.cpp:19:6:void EngineerPageView::updateTemp1(int)	16	static
-EngineerPageView.cpp:44:6:void EngineerPageView::updateTemp2(int)	16	static
-EngineerPageView.cpp:68:6:void EngineerPageView::updateTemp3(int)	16	static
-EngineerPageView.cpp:92:6:void EngineerPageView::updateTemp4(int)	16	static
+EngineerPageView.cpp:43:6:void EngineerPageView::updateTemp2(int)	16	static
+EngineerPageView.cpp:66:6:void EngineerPageView::updateTemp3(int)	16	static
+EngineerPageView.cpp:89:6:void EngineerPageView::updateTemp4(int)	16	static
+EngineerPageView.cpp:112:6:void EngineerPageView::updateTempC(int)	16	static
+EngineerPageView.cpp:135:6:void EngineerPageView::updateTempM(int)	16	static

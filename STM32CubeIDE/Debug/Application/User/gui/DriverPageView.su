@@ -3,10 +3,11 @@ Screen.hpp:143:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 DriverPageView.hpp:11:13:DriverPageView::~DriverPageView()	0	static
 DriverPageView.cpp:12:6:virtual void DriverPageView::tearDownScreen()	0	static
 DriverPageView.cpp:7:6:virtual void DriverPageView::setupScreen()	0	static
-DriverPageView.cpp:53:6:virtual void DriverPageView::Time_RS()	0	static
-DriverPageView.cpp:57:6:virtual void DriverPageView::Time_SS()	0	static
+DriverPageView.cpp:57:6:virtual void DriverPageView::Time_RS()	0	static
+DriverPageView.cpp:60:6:virtual void DriverPageView::Time_SS()	0	static
 DriverPageView.hpp:11:13:virtual DriverPageView::~DriverPageView()	8	static
 DriverPageView.cpp:3:1:DriverPageView::DriverPageView()	8	static
 DriverPageView.cpp:17:6:void DriverPageView::updateSpeed(unsigned char)	16	static
-DriverPageView.cpp:41:6:void DriverPageView::updateTime(unsigned int, unsigned int)	24	static
-DriverPageView.cpp:49:6:void DriverPageView::updateBp(unsigned char)	0	static
+DriverPageView.cpp:39:6:void DriverPageView::updateBp(unsigned char)	16	static
+DriverPageView.cpp:44:6:void DriverPageView::updateAp(unsigned char)	0	static
+DriverPageView.cpp:49:6:void DriverPageView::updateTime(unsigned int, unsigned int)	24	static

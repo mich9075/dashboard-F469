@@ -1,5 +1,5 @@
 Application/User/TouchGFX/target/STM32TouchController.o: \
- C:/TouchGFXProjects/rerestart/TouchGFX/target/STM32TouchController.cpp \
+ C:/TouchGFXProjects/rerestart_push/TouchGFX/target/STM32TouchController.cpp \
  ../../TouchGFX/target/STM32TouchController.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
@@ -46,7 +46,7 @@ Application/User/TouchGFX/target/STM32TouchController.o: \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dsi.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h \
  ../../Drivers/BSP/STM32469I-Discovery/../Components/ft6x06/ft6x06.h \
- c:\touchgfxprojects\rerestart\drivers\bsp\components\common\ts.h
+ c:\touchgfxprojects\rerestart_push\drivers\bsp\components\common\ts.h
 
 ../../TouchGFX/target/STM32TouchController.hpp:
 
@@ -140,4 +140,4 @@ Application/User/TouchGFX/target/STM32TouchController.o: \
 
 ../../Drivers/BSP/STM32469I-Discovery/../Components/ft6x06/ft6x06.h:
 
-c:\touchgfxprojects\rerestart\drivers\bsp\components\common\ts.h:
+c:\touchgfxprojects\rerestart_push\drivers\bsp\components\common\ts.h:

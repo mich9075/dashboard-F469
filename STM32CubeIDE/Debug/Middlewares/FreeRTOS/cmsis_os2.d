@@ -1,6 +1,6 @@
 Middlewares/FreeRTOS/cmsis_os2.o: \
- C:/TouchGFXProjects/rerestart/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c \
- C:/TouchGFXProjects/rerestart/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ C:/TouchGFXProjects/rerestart_push/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c \
+ C:/TouchGFXProjects/rerestart_push/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
  ../../Drivers/CMSIS/Include/cmsis_compiler.h \
  ../../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
@@ -17,8 +17,8 @@ Middlewares/FreeRTOS/cmsis_os2.o: \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
- C:/TouchGFXProjects/rerestart/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h \
- C:/TouchGFXProjects/rerestart/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h \
+ C:/TouchGFXProjects/rerestart_push/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h \
+ C:/TouchGFXProjects/rerestart_push/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h \
  ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f469xx.h \
  ../../Drivers/CMSIS/Include/core_cm4.h \
@@ -58,7 +58,7 @@ Middlewares/FreeRTOS/cmsis_os2.o: \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dsi.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h
 
-C:/TouchGFXProjects/rerestart/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+C:/TouchGFXProjects/rerestart_push/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
 
 ../../Drivers/CMSIS/Include/cmsis_compiler.h:
 
@@ -92,9 +92,9 @@ C:/TouchGFXProjects/rerestart/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS
 
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 
-C:/TouchGFXProjects/rerestart/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h:
+C:/TouchGFXProjects/rerestart_push/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_mpool.h:
 
-C:/TouchGFXProjects/rerestart/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h:
+C:/TouchGFXProjects/rerestart_push/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/freertos_os2.h:
 
 ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 
