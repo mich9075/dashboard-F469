@@ -12803,23 +12803,23 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
                                0x4f8b (size before relaxing)
  .debug_str     0x0000629c      0x333 TouchGFX/build/STM32F469-DISCO/TouchGFX/gui/src/driverpage_screen/DriverPagePresenter.o
                                 0xfcf (size before relaxing)
- .debug_str     0x000065cf      0x14e TouchGFX/build/STM32F469-DISCO/TouchGFX/gui/src/model/Model.o
-                                0x449 (size before relaxing)
- .debug_str     0x0000671d      0xcb0 TouchGFX/build/STM32F469-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
+ .debug_str     0x000065cf      0x12b TouchGFX/build/STM32F469-DISCO/TouchGFX/gui/src/model/Model.o
+                                0x444 (size before relaxing)
+ .debug_str     0x000066fa      0xcb0 TouchGFX/build/STM32F469-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
                                0x2070 (size before relaxing)
- .debug_str     0x000073cd      0xdce TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/gui_generated/src/engineerpage_screen/EngineerPageViewBase.o
+ .debug_str     0x000073aa      0xdce TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/gui_generated/src/engineerpage_screen/EngineerPageViewBase.o
                                0x5ced (size before relaxing)
- .debug_str     0x0000819b     0x17f9 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/gui_generated/src/driverpage_screen/DriverPageViewBase.o
+ .debug_str     0x00008178     0x17f9 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/gui_generated/src/driverpage_screen/DriverPageViewBase.o
                                0x7f5a (size before relaxing)
- .debug_str     0x00009994     0x194d TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
+ .debug_str     0x00009971     0x194d TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
                                0x7d21 (size before relaxing)
- .debug_str     0x0000b2e1       0x53 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
+ .debug_str     0x0000b2be       0x53 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
                                 0x30e (size before relaxing)
- .debug_str     0x0000b334       0x53 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/Font_verdana_30_4bpp_0.o
+ .debug_str     0x0000b311       0x53 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/Font_verdana_30_4bpp_0.o
                                 0x30e (size before relaxing)
- .debug_str     0x0000b387       0x53 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
+ .debug_str     0x0000b364       0x53 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
                                 0x30e (size before relaxing)
- .debug_str     0x0000b3da      0x94a TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
+ .debug_str     0x0000b3b7      0x96d TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
                                0x1293 (size before relaxing)
  .debug_str     0x0000bd24       0x53 TouchGFX/build/STM32F469-DISCO/TouchGFX/generated/fonts/src/Kerning_verdana_100_4bpp.o
                                 0x8f0 (size before relaxing)
@@ -12902,7 +12902,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_str     0x00012f9e      0x5e6 TouchGFX/build/STM32F469-DISCO/Core/Src/stm32f4xx_hal_timebase_tim.o
                                 0xfd6 (size before relaxing)
  .debug_str     0x00013584     0x162d TouchGFX/build/STM32F469-DISCO/Core/Src/main.o
-                               0x2d47 (size before relaxing)
+                               0x2d42 (size before relaxing)
  .debug_str     0x00014bb1      0x14a TouchGFX/build/STM32F469-DISCO/Core/Src/stm32f4xx_it.o
                                0x100e (size before relaxing)
  .debug_str     0x00014cfb      0x308 TouchGFX/build/STM32F469-DISCO/Core/Src/stm32f4xx_hal_msp.o

@@ -1,5 +1,5 @@
 Application/User/gui/DriverPageView.o: \
- C:/TouchGFXProjects/rerestart_push/TouchGFX/gui/src/driverpage_screen/DriverPageView.cpp \
+ C:/TouchGFXProjects/rerestart/TouchGFX/gui/src/driverpage_screen/DriverPageView.cpp \
  ../../TouchGFX/gui/include/gui/driverpage_screen/DriverPageView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/driverpage_screen/DriverPageViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

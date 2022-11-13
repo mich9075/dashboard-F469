@@ -39,7 +39,7 @@ EngineerPageViewBase::EngineerPageViewBase() :
     textArea_Temp.resizeToCurrentText();
     textArea_Temp.setTypedText(touchgfx::TypedText(T_SINGLEUSEID9));
 
-    boxProgress_Temp_2.setXY(20, 440);
+    boxProgress_Temp_2.setXY(590, 150);
     boxProgress_Temp_2.setProgressIndicatorPosition(2, 2, 180, 16);
     boxProgress_Temp_2.setRange(0, 120);
     boxProgress_Temp_2.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
@@ -55,7 +55,7 @@ EngineerPageViewBase::EngineerPageViewBase() :
     textArea_Temp_2.resizeToCurrentText();
     textArea_Temp_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID16));
 
-    boxProgress_Temp_3.setXY(590, 140);
+    boxProgress_Temp_3.setXY(20, 440);
     boxProgress_Temp_3.setProgressIndicatorPosition(2, 2, 180, 16);
     boxProgress_Temp_3.setRange(0, 120);
     boxProgress_Temp_3.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);

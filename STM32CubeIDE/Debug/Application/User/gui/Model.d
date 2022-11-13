@@ -1,5 +1,5 @@
 Application/User/gui/Model.o: \
- C:/TouchGFXProjects/rerestart_push/TouchGFX/gui/src/model/Model.cpp \
+ C:/TouchGFXProjects/rerestart/TouchGFX/gui/src/model/Model.cpp \
  ../../TouchGFX/gui/include/gui/model/Model.hpp \
  ../../TouchGFX/gui/include/gui/model/ModelListener.hpp \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \

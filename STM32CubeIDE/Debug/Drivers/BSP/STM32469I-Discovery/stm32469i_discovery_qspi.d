@@ -1,6 +1,6 @@
 Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_qspi.o: \
- C:/TouchGFXProjects/rerestart_push/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_qspi.c \
- C:/TouchGFXProjects/rerestart_push/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_qspi.h \
+ C:/TouchGFXProjects/rerestart/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_qspi.c \
+ C:/TouchGFXProjects/rerestart/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_qspi.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../../Core/Inc/stm32f4xx_hal_conf.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -40,9 +40,9 @@ Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_qspi.o: \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dsi.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h \
- c:\touchgfxprojects\rerestart_push\drivers\bsp\components\n25q128a\n25q128a.h
+ c:\touchgfxprojects\rerestart\drivers\bsp\components\n25q128a\n25q128a.h
 
-C:/TouchGFXProjects/rerestart_push/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_qspi.h:
+C:/TouchGFXProjects/rerestart/Drivers/BSP/STM32469I-Discovery/stm32469i_discovery_qspi.h:
 
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 
@@ -122,4 +122,4 @@ C:/TouchGFXProjects/rerestart_push/Drivers/BSP/STM32469I-Discovery/stm32469i_dis
 
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_qspi.h:
 
-c:\touchgfxprojects\rerestart_push\drivers\bsp\components\n25q128a\n25q128a.h:
+c:\touchgfxprojects\rerestart\drivers\bsp\components\n25q128a\n25q128a.h:
